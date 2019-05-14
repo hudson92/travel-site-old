@@ -1,0 +1,41 @@
+
+/*Start with the base block rule and then using '&' we can nest element rules within it, the '&' replicated the '.large-hero' class*/
+.large-hero {
+    position: relative;
+    
+    &__text-content {
+    position: absolute;
+    top: 50%; /*This lines the top of the div 50% from the top of the parent div*/
+    transform: translateY(-50%); /*this function will move the element the % of its total height or width up or down, left or right i.e 100% of 100px would be 100px higher*/
+    width: 100%;
+    text-align: center;
+    }
+    
+    &__title {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 4.8rem;
+    margin: 0;
+}
+        
+    &__subtitle {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 2.9rem;
+    margin: 0;
+}
+
+    &__description {
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 100;
+    text-shadow: 2px 2px 0 rgba(0,0,0, .1);
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+
+
+
